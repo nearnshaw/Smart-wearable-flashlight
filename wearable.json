@@ -1,0 +1,30 @@
+{
+	"id": "c1033a22-065a-4ef3-a41a-1c32c7476ad4",
+	"data": {
+		"replaces": [],
+		"hides": [],
+		"tags": [
+			"special",
+			"new",
+			"eyebrows"
+		],
+		"representations": [
+			{
+				"bodyShapes": [
+					"urn:decentraland:off-chain:base-avatars:BaseMale",
+					"urn:decentraland:off-chain:base-avatars:BaseFemale"
+				],
+				"mainFile": "glasses.glb",
+				"contents": [
+					"glasses.glb"
+				],
+				"overrideHides": [],
+				"overrideReplaces": []
+			}
+		],
+		"category": "eyewear"
+	},
+	"name": "Portable Experience Example",
+	"description": "This feature is in Alpha state.",
+	"rarity": "mythic"
+}
