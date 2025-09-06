@@ -134,3 +134,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+smart-wearable.zip
+package-lock.json
+package-lock.json
+bin/index.js.map
+bin/index.js
+main.crdt
+.editor/project.json
