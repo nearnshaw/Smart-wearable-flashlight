@@ -1,10 +1,11 @@
 {
   "ecs7": true,
   "runtimeVersion": "7",
+  "isPortableExperience": true,
   "display": {
     "title": "Headlamp Smart Wearable",
     "description": "First scene with SDK7",
-    "navmapThumbnail": "images/scene-thumbnail.png",
+    "navmapThumbnail": "images/thumbnail.png",
     "favicon": "favicon_asset"
   },
   "owner": "",
@@ -20,43 +21,12 @@
     ],
     "base": "0,0"
   },
-  "spawnPoints": [
-    {
-      "name": "Spawn Point 1",
-      "default": true,
-      "position": {
-        "x": [
-          0,
-          3
-        ],
-        "y": [
-          0,
-          0
-        ],
-        "z": [
-          0,
-          3
-        ]
-      },
-      "cameraTarget": {
-        "x": 8,
-        "y": 1,
-        "z": 8
-      }
-    }
-  ],
   "requiredPermissions": [],
   "featureToggles": {
     "voiceChat": "enabled",
     "portableExperiences": "enabled"
   },
-  "worldConfiguration": {
-    "name": "maximocossetti.dcl.eth"
-  },
   "rating": "T",
-  "skyboxConfig": {
-    "fixedTime": 43200
-  },
   "source": {
     "origin": "creator-hub",
     "projectId": "1f3c93bc-ce84-4ac4-8f7d-70605df33d42"

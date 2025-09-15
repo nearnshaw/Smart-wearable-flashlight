@@ -14,15 +14,15 @@
 					"urn:decentraland:off-chain:base-avatars:BaseMale",
 					"urn:decentraland:off-chain:base-avatars:BaseFemale"
 				],
-				"mainFile": "glasses.glb",
+				"mainFile": "Audius_Headphones.glb",
 				"contents": [
-					"glasses.glb"
+					"Audius_Headphones.glb"
 				],
 				"overrideHides": [],
 				"overrideReplaces": []
 			}
 		],
-		"category": "eyewear"
+		"category": "top_head"
 	},
 	"name": "Portable Experience Example",
 	"description": "This feature is in Alpha state.",
