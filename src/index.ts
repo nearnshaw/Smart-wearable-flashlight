@@ -64,7 +64,7 @@ export function setWhiteFlashlightColor() {
   light.color = { r: 1, g: 1, b: 1 }
 }
 
-export function increaseFlashlightIntensity(step: number = 100000) {
+export function increaseFlashlightIntensity(step: number = 300000) {
   if (!flashlightEntity) return
   if (!LightSource.getOrNull(flashlightEntity)) {
     LightSource.create(flashlightEntity, FLASHLIGHT_CONFIG)
@@ -80,7 +80,7 @@ export function increaseFlashlightIntensity(step: number = 100000) {
   console.log('Flashlight intensity increased to', light.intensity)
 }
 
-export function decreaseFlashlightIntensity(step: number = 100000) {
+export function decreaseFlashlightIntensity(step: number = 300000) {
   increaseFlashlightIntensity(-Math.abs(step))
 }
 
@@ -92,7 +92,7 @@ export function main() {
   const flashlightParentEntity = engine.addEntity()
 
   Transform.create(flashlightEntity, {
-    position: Vector3.create(0, 0, 0.3),
+    position: Vector3.create(0, 0, 0.35),
     rotation: Quaternion.fromEulerDegrees(12, 0, 0),
     parent: flashlightParentEntity
   })

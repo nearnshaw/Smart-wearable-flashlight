@@ -21,26 +21,30 @@ const uiComponent = () => (
       positionType: 'absolute',
       position: { right: 12, bottom: 12 },
       padding: 6,
+      borderRadius: 12,
+      borderWidth: 1,
+      borderColor: Color4.fromHexString('#ffffff33')
     }}
-    uiBackground={{ color: Color4.fromHexString('#1b1b1be6') }}
+    uiBackground={{ color: Color4.fromHexString('#111111cc') }}
   >
     <UiEntity
       uiTransform={{
         width: '100%',
         flexDirection: 'column',
         alignItems: 'stretch',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        borderRadius: 10
       }}
-      uiBackground={{ color: Color4.fromHexString('#2a2a2aff') }}
+      uiBackground={{ color: Color4.fromHexString('#222222ff') }}
     >
       <UiEntity
         uiTransform={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}
       >
         <Button
-          uiTransform={{ width: '100%', height: 34, margin: 3 }}
-          value={getIsActive?.() ? 'Flashlight On' : 'Flashlight Off'}
+          uiTransform={{ width: '100%', height: 36, margin: 3, borderRadius: 8 }}
+          value={getIsActive?.() ? 'Light On' : 'Light Off'}
           variant={getIsActive?.() ? 'primary' : 'secondary'}
-          fontSize={12}
+          fontSize={14}
           onMouseDown={() => {
             onToggleFlashlight?.()
           }}
@@ -51,19 +55,19 @@ const uiComponent = () => (
         uiTransform={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}
       >
         <Button
-          uiTransform={{ width: '50%', height: 30, margin: 3 }}
+          uiTransform={{ width: '50%', height: 30, margin: 3, borderRadius: 8 }}
           value='Random color'
           variant='secondary'
-          fontSize={11}
+          fontSize={13}
           onMouseDown={() => {
             onRandomColor?.()
           }}
         />
         <Button
-          uiTransform={{ width: '50%', height: 30, margin: 3 }}
+          uiTransform={{ width: '50%', height: 30, margin: 3, borderRadius: 8 }}
           value='White'
           variant='secondary'
-          fontSize={11}
+          fontSize={13}
           onMouseDown={() => {
             onResetColor?.()
           }}
@@ -74,19 +78,19 @@ const uiComponent = () => (
         uiTransform={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}
       >
         <Button
-          uiTransform={{ width: '50%', height: 30, margin: 3 }}
+          uiTransform={{ width: '50%', height: 30, margin: 3, borderRadius: 8 }}
           value='+ Intensity'
           variant='secondary'
-          fontSize={11}
+          fontSize={13}
           onMouseDown={() => {
             onIncreaseIntensity?.()
           }}
         />
         <Button
-          uiTransform={{ width: '50%', height: 30, margin: 3 }}
+          uiTransform={{ width: '50%', height: 30, margin: 3, borderRadius: 8 }}
           value='- Intensity'
           variant='secondary'
-          fontSize={11}
+          fontSize={13}
           onMouseDown={() => {
             onDecreaseIntensity?.()
           }}

@@ -395,64 +395,29 @@
       "data": {
         "0": {
           "json": {
-            "name": "H",
+            "name": "Headlamp Smart Wearable",
             "description": "First scene with SDK7",
-            "thumbnail": "images/scene-thumbnail.png",
+            "thumbnail": "images/thumbnail.png",
             "ageRating": "T",
             "categories": [],
             "author": "SDK",
-            "tags": [
-              ""
-            ],
+            "email": "",
+            "tags": [],
             "layout": {
-              "base": {
-                "x": 0,
-                "y": 0
-              },
               "parcels": [
                 {
                   "x": 0,
                   "y": 0
                 }
-              ]
-            },
-            "skyboxConfig": {
-              "fixedTime": 43200
-            },
-            "spawnPoints": [
-              {
-                "name": "Spawn Point 1",
-                "default": true,
-                "position": {
-                  "x": {
-                    "$case": "range",
-                    "value": [
-                      0,
-                      3
-                    ]
-                  },
-                  "y": {
-                    "$case": "range",
-                    "value": [
-                      0,
-                      0
-                    ]
-                  },
-                  "z": {
-                    "$case": "range",
-                    "value": [
-                      0,
-                      3
-                    ]
-                  }
-                },
-                "cameraTarget": {
-                  "x": 8,
-                  "y": 1,
-                  "z": 8
-                }
+              ],
+              "base": {
+                "x": 0,
+                "y": 0
               }
-            ]
+            },
+            "silenceVoiceChat": false,
+            "disablePortableExperiences": false,
+            "skyboxConfig": {}
           }
         }
       }
