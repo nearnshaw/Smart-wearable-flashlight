@@ -5,7 +5,8 @@ import { setupUi } from './ui'
 
 // export all the functions required to make the scene work
 export * from '@dcl/sdk'
-import { AvatarAttach, AvatarAnchorPointType, engine, Entity, LightSource, MeshRenderer, Transform } from '@dcl/sdk/ecs'
+import { AvatarAttach, AvatarAnchorPointType, engine, Entity, LightSource, MeshRenderer, Transform, SkyboxTime } from '@dcl/sdk/ecs'
+
 
 
 
@@ -116,3 +117,12 @@ export function main() {
 }
 
 
+function changeSkyboxTime(time: number) {
+  SkyboxTime.create(engine.RootEntity, { fixedTime: time })
+}
+
+function resetSkyboxTime() {
+  if(SkyboxTime.has(engine.RootEntity)) {
+    SkyboxTime.deleteFrom(engine.RootEntity)
+  }
+}
