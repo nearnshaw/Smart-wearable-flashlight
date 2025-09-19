@@ -32,5 +32,7 @@
     "projectId": "1f3c93bc-ce84-4ac4-8f7d-70605df33d42"
   },
   "spawnPoints": [],
-  "skyboxConfig": {}
+  "skyboxConfig": {
+    "fixedTime": 0
+  }
 }
