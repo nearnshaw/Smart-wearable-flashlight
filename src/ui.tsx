@@ -11,6 +11,8 @@ let onResetColor: (() => void) | null = null
 let onIncreaseIntensity: (() => void) | null = null
 let onDecreaseIntensity: (() => void) | null = null
 let getIsActive: (() => boolean) | null = null
+let onToggleNight: (() => void) | null = null
+let getIsNightActive: (() => boolean) | null = null
 
 let isMinimized = false
 
@@ -62,6 +64,21 @@ const uiComponent = () => (
           fontSize={14}
           onMouseDown={() => {
             onToggleFlashlight?.()
+          }}
+        />
+      </UiEntity>
+
+      <UiEntity
+        uiTransform={{ width: '100%', flexDirection: 'row', justifyContent: 'space-between' }}
+        uiBackground={{ color: Color4.fromHexString('#222222ff') }}
+      >
+        <Button
+          uiTransform={{ width: '100%', height: 30, margin: 3, borderRadius: 8 }}
+          value={getIsNightActive?.() ? 'Night mode: On' : 'Night mode: Off'}
+          variant={getIsNightActive?.() ? 'primary' : 'secondary'}
+          fontSize={12}
+          onMouseDown={() => {
+            onToggleNight?.()
           }}
         />
       </UiEntity>
@@ -143,6 +160,8 @@ export function setupUi(callbacks?: {
   increaseIntensity?: () => void,
   decreaseIntensity?: () => void,
   getActive?: () => boolean,
+  toggleNight?: () => void,
+  getNightActive?: () => boolean,
 }) {
   onToggleFlashlight = callbacks?.toggle ?? null
   onRandomColor = callbacks?.randomColor ?? null
@@ -150,5 +169,7 @@ export function setupUi(callbacks?: {
   onIncreaseIntensity = callbacks?.increaseIntensity ?? null
   onDecreaseIntensity = callbacks?.decreaseIntensity ?? null
   getIsActive = callbacks?.getActive ?? null
+  onToggleNight = callbacks?.toggleNight ?? null
+  getIsNightActive = callbacks?.getNightActive ?? null
   ReactEcsRenderer.setUiRenderer(uiComponent)
 }

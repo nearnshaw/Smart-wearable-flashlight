@@ -85,6 +85,18 @@ export function decreaseFlashlightIntensity(step: number = 300000) {
   increaseFlashlightIntensity(-Math.abs(step))
 }
 
+export function toggleNightMode() {
+  if (SkyboxTime.has(engine.RootEntity)) {
+    resetSkyboxTime()
+  } else {
+    changeSkyboxTime(0)
+  }
+}
+
+export function isNightModeActive(): boolean {
+  return SkyboxTime.has(engine.RootEntity)
+}
+
 export function main() {
 
 
@@ -110,7 +122,9 @@ export function main() {
     resetColor: setWhiteFlashlightColor,
     increaseIntensity: () => increaseFlashlightIntensity(100000),
     decreaseIntensity: () => decreaseFlashlightIntensity(100000),
-    getActive: isFlashlightActive
+    getActive: isFlashlightActive,
+    toggleNight: toggleNightMode,
+    getNightActive: isNightModeActive
   })
 
 
