@@ -93,7 +93,7 @@ export function main() {
   const flashlightParentEntity = engine.addEntity()
 
   Transform.create(flashlightEntity, {
-    position: Vector3.create(0, 0, 0.35),
+    position: Vector3.create(0, 0.4, 0.4),
     rotation: Quaternion.fromEulerDegrees(12, 0, 0),
     parent: flashlightParentEntity
   })

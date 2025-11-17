@@ -11,8 +11,8 @@
     "pack": "sdk-commands pack-smart-wearable"
   },
   "devDependencies": {
-    "@dcl/js-runtime": "7.10.2",
-    "@dcl/sdk": "7.10.2"
+    "@dcl/js-runtime": "7.13.0",
+    "@dcl/sdk": "7.13.0"
   },
   "engines": {
     "node": ">=16.0.0",

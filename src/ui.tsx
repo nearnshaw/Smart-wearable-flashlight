@@ -14,7 +14,6 @@ let getIsActive: (() => boolean) | null = null
 
 let isMinimized = false
 
-
 const uiComponent = () => (
   <UiEntity
     uiTransform={{

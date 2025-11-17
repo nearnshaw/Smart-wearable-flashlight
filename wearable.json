@@ -14,9 +14,9 @@
 					"urn:decentraland:off-chain:base-avatars:BaseMale",
 					"urn:decentraland:off-chain:base-avatars:BaseFemale"
 				],
-				"mainFile": "Audius_Headphones.glb",
+				"mainFile": "SmartMinersHelmet.glb",
 				"contents": [
-					"Audius_Headphones.glb"
+					"SmartMinersHelmet.glb"
 				],
 				"overrideHides": [],
 				"overrideReplaces": []
