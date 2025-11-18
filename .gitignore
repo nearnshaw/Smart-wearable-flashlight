@@ -141,3 +141,5 @@ bin/index.js.map
 bin/index.js
 main.crdt
 .editor/project.json
+.DS_Store
+assets/.DS_Store
